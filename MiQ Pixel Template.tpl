@@ -14,7 +14,7 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "MiQ Pixel Template",
-  "categories": ["ANALYTICS", "CONVERSIONS", "LEAD_GENERATION", "TAG_MANAGEMENT"],
+  "categories": ["ANALYTICS", "CONVERSIONS", "LEAD_GENERATION", "TAG_MANAGEMENT", "PERSONALIZATION", "REMARKETING"],
   "brand": {
     "id": "brand_dummy",
     "displayName": "Pixel Template",
