@@ -228,17 +228,17 @@ const encodeUriComponent = require('encodeUriComponent');
 const miqTagType = data.miqTagType;
 
 const XandrTag = data.XandrTag;
-const XPid = data.XPid;
-const XSid = data.XSid;
+const XPid = encodeUriComponent(data.XPid);
+const XSid = encodeUriComponent(data.XSid);
 
 const DV360Tag = data.DV360Tag;
-const DFid = data.DFid;
-const DType = data.DType;
-const DCat = data.DCat;
+const DFid = encodeUriComponent(data.DFid);
+const DType = encodeUriComponent(data.DType);
+const DCat = encodeUriComponent(data.DCat);
 
 const TTDTag = data.TTDTag;
-const TAid = data.TAid;
-const TPid = data.TPid;
+const TAid = encodeUriComponent(data.TAid);
+const TPid = encodeUriComponent(data.TPid);
 
 if(miqTagType=="capture"){
   const varArr = data.variableTable1;
@@ -247,24 +247,24 @@ if(miqTagType=="capture"){
   var dCap = "";
   var tCap = "";
   
-  var orderId = data.orderId;
+  var orderId = encodeUriComponent(data.orderId);
   if(orderId==null){
     orderId = "";
   }
-  var orderValue = data.orderValue;
+  var orderValue = encodeUriComponent(data.orderValue);
   if(orderValue==null){
     orderValue = "";
   }
   var a = 1;
   varArr.forEach(function(varItem){
-    varText = varItem.variableSyntax;
+    varText = encodeUriComponent(varItem.variableSyntax);
     if(typeof varItem.variableSyntax == "object"){
-      varText = varItem.variableSyntax.toString();
+      varText = encodeUriComponent(varItem.variableSyntax.toString());
     }
-    xCap += "&u" + a + "=" + varItem.variableSyntax;
-    dCap += ";u" + a + "=" + varItem.variableSyntax;
+    xCap += "&u" + a + "=" + varText;
+    dCap += ";u" + a + "=" + varText;
     if(a<11){
-      tCap += "&td" + a + "=" + varItem.variableSyntax;
+      tCap += "&td" + a + "=" + varText;
     }
     a++;
   });
