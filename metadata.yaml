@@ -2,8 +2,10 @@ homepage: "https://www.wearemiq.com"
 documentation: "https://github.com/skchan2/MiQ-GTM-Template/blob/main/readme"
 versions:
   # Latest version
+  - sha: bbf73cd268cc6507f10505316ddaaaf338dc9480
+    changeNotes: filename change
+  # Older versions
   - sha: f22fe682800862826c5672bd11e6be40a823f2f9
     changeNotes: Additional categories added
-  # Older versions
   - sha: 00f43b2df20c9e4dc276b3fe7bc6ac7b286f55d8
     changeNotes: Initial release.
