@@ -36,11 +36,11 @@ Search for **'MiQ'** and select
 
 ![Google Tag Manager](https://sunnychan.rocks/img/miq/gtm_template_step_09.png)
 
-Check the tags to use the
+Check the tags to use
 
 ![Google Tag Manager](https://sunnychan.rocks/img/miq/gtm_template_step_10.png)
 
-Enter the MiQ provided IDs in ther respective fields, Name the tag and click **'Save'**
+Enter the MiQ provided IDs in ther respective fields, Name the tag, select the trigger to fire the tag and click **'Save'**
 
 ![Google Tag Manager](https://sunnychan.rocks/img/miq/gtm_template_step_11.png)
 
