@@ -1,5 +1,5 @@
 homepage: "https://www.wearemiq.com"
-documentation: "https://github.com/skchan2/MiQ-GTM-Template/blob/main/readme"
+documentation: "https://github.com/skchan2/MiQ-GTM-Template/blob/main/readme.md"
 versions:
   # Latest version
   - sha: 5546173c97eec3753d32bd14e9d771a5eb65c123
